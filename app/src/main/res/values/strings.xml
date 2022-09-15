@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Modular</string>
+    <string name="title_product">Product</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_report">Report</string>
+    <string name="title_activity_report">ReportActivity</string>
+</resources>

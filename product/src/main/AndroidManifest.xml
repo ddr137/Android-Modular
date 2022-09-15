@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.ddr.androidmodular.product">
+
+    <dist:module
+        dist:instant="false"
+        dist:title="@string/title_product">
+        <dist:delivery>
+            <dist:install-time />
+        </dist:delivery>
+
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+    <application>
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="true"
+            android:label="@string/title_activity_category"
+            android:theme="@style/Theme.AndroidModular.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="category"
+                    android:scheme="kasir" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ProductActivity"
+            android:exported="true"
+            android:label="@string/title_activity_product"
+            android:theme="@style/Theme.AndroidModular.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="product"
+                    android:scheme="kasir" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
